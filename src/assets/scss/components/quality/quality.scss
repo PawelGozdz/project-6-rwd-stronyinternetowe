@@ -1,0 +1,41 @@
+.quality {
+  flex-direction: column;
+  
+  & > p {
+    margin-top: rem-calc(5);
+  }
+
+  & > h3 {
+    margin-bottom: rem-calc(30);
+  }
+}
+
+.tasks {
+  @include xy-grid();
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 0 10px 2px $light-gray; 
+  padding: rem-calc(10) rem-calc(5);
+
+  figure {
+    margin-top: rem-calc(10);
+    
+    @include breakpoint(small only) {
+      @include xy-cell(1 / 3);
+    }
+
+    @include breakpoint(medium only) {
+      @include xy-cell( 1 / 4);
+    }
+
+  }
+
+  figcaption {
+    margin-top: rem-calc(15);
+  }
+
+  img {
+    height: rem-calc(80);
+  }
+}
+

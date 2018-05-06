@@ -51,3 +51,20 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@import 'layouts';
+@import 'base';
+
+@import 'components/header/header';
+@import 'components/header/navigation';
+@import 'components/header/person';
+@import 'components/hero/hero';
+@import 'components/page/page';
+@import 'components/page/info';
+@import 'components/quality/quality';
+@import 'components/price/prices';
+@import 'components/price/services';
+@import 'components/about/about';
+@import 'components/contact/contact';
+@import 'components/footer/footer';
+@import 'jquery';

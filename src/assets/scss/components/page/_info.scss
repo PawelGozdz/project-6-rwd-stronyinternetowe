@@ -1,0 +1,57 @@
+.info {
+  text-align: center;
+  padding-top: 16px;
+  background-color: rgba($light-gray, .3);
+
+  &__icon {
+    height: rem-calc(65);
+    width: 100%;
+
+    @include breakpoint(xlarge) {
+      height: rem-calc(85);
+    }
+  }
+}
+
+.box {
+  @include xy-cell();
+  margin-bottom: rem-calc(20);
+
+  @include breakpoint(small only) {
+    &:not(:last-child) {
+      border-bottom: 1px solid $medium-gray;
+    }
+  }
+  
+  
+  @include breakpoint(medium large only) {
+    @include xy-cell(1/2);
+    border-bottom: 1px solid $medium-gray;
+  }
+
+  @include breakpoint(xlarge) {
+    @include xy-cell(1/4);
+    border-bottom: 0;
+    
+    &:not(:last-child) {
+      border-right: 1px solid $medium-gray;
+    }
+
+  }
+
+  h5 {
+    margin: rem-calc(8) 0;
+
+    @include breakpoint(xlarge) {
+      font-size: 20px;
+    }
+
+    @include breakpoint(xxlarge) {
+      font-size: 26px;
+    }
+  }
+
+  p {
+    padding: 5px;
+  }
+}

@@ -69,20 +69,21 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
+  primary: #094074,
+  secondary: #3C6997,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
 $light-gray: #e6e6e6;
+$tertiary-color: rgb(248, 156, 36);
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$dark-gray: #4a4949;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-color: $dark-gray;
+$body-font-family: 'Roboto Slab', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -106,13 +107,13 @@ $print-transparent-backgrounds: true;
 
 $breakpoints: (
   small: 0,
-  medium: 640px,
-  large: 1024px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
+  medium: 576px,
+  large: 768px,
+  xlarge: 1024px,
+  xxlarge: 1200px,
 );
-$print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$print-breakpoint: medium;
+$breakpoint-classes: (small medium large xlarge);
 
 // 3. The Grid
 // -----------
@@ -139,12 +140,12 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 36),
+    'h2': ('font-size': 30),
+    'h3': ('font-size': 26),
+    'h4': ('font-size': 22),
+    'h5': ('font-size': 21),
+    'h6': ('font-size': 17),
   ),
   medium: (
     'h1': ('font-size': 48),
@@ -153,6 +154,14 @@ $header-styles: (
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
+  ),
+  large: (
+    'h1': ('font-size': 52),
+    'h2': ('font-size': 44),
+    'h3': ('font-size': 36),
+    'h4': ('font-size': 30),
+    'h5': ('font-size': 24),
+    'h6': ('font-size': 18),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -167,7 +176,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
+$anchor-color: $dark-gray;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;

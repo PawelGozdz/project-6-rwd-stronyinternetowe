@@ -1,0 +1,61 @@
+.prices {
+
+  & > h3 {
+    @include xy-cell();
+    margin-bottom: rem-calc(30);
+  }
+
+  &__container {
+    @include padding(1,0,1,0);
+    @include xy-grid;
+    margin-bottom: rem-calc(15);
+    background-image: linear-gradient(rgba($white, .95), rgba($white, .95)), url("../../assets/img/sketch-2-small.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .box {
+    @include xy-cell();
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: rem-calc(250);
+    
+    @include breakpoint(large) {
+      @include xy-cell(1 / 3);
+
+    }
+
+    h4 {
+      background-color: $secondary-color;
+      color: $white;
+      padding: 4px 22px;
+      border-left: 5px solid $primary-color;
+    }
+
+    a {
+      margin: 0 auto rem-calc(30);
+      width: 250px;
+      height: 45px;
+
+      @include breakpoint(large) {
+        width: 220px; 
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.service-price {
+  margin-top: auto;
+  
+}
+.close-button {
+  background-color: $primary-color;
+  color: $white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 5px;
+}

@@ -1,0 +1,38 @@
+.services {
+  @include xy-grid;
+
+  & > h3,
+  & > p {
+    @include xy-cell();
+  }
+
+  & > h3 {
+    margin-bottom: rem-calc(30);
+  }
+
+  &__container {
+    @include padding(2,0,1,0);
+    @include xy-grid;
+    margin-bottom: rem-calc(15);
+    background-image: linear-gradient(rgba($secondary-color, .15), rgba($white, .95));
+  }
+
+  h4 {
+    background-color: rgba($secondary-color, .3);
+    padding-left: 3px;
+    margin-bottom: rem-calc(18);
+  }
+
+  h4 span {
+    background-color: $secondary-color;
+    color: $white;
+    padding: 4px 22px;
+    border-left: 5px solid $primary-color;
+    width: 20px;
+    height: 20px;
+  }
+
+  h5 span {
+    font-size: rem-calc(18);
+  }
+}

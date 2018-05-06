@@ -1,0 +1,26 @@
+.footer {
+
+  
+  .social-media {
+    @include xy-grid;
+    @include xy-cell();
+    @include xy-grid-collapse;
+    width: 100%;
+    justify-content: center;
+    padding: rem-calc(10) 0;
+    background-color: $primary-color;
+
+    .social__icon {
+      height: rem-calc(45);
+      width: rem-calc(45);
+      margin: 0 rem-calc(10);
+      fill: $white;
+      transition: fill .5s ease;
+
+      &:hover {
+        fill: rgba($secondary-color, .99);
+      }
+    }
+  }
+
+}

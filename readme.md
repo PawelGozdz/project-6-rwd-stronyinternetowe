@@ -68,5 +68,3 @@ http://localhost:8000
 ```
 
 To create compressed, production-ready assets, run `npm run build`.
-# rwd-stronyinternetowe
-# rwd-stronyinternetowe

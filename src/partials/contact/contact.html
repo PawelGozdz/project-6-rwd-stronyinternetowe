@@ -1,0 +1,37 @@
+<h3>Kontakt</h3>
+
+<div class="form__container">
+  <form method="post" class="contact__form" id="contact-form" action="assets/php/send.php" accept-charset="utf-8" data-abide novalidate>
+
+    <div class="field-container">
+      <label for="name">Twoje Imię:</label>
+      <input type="text" name="name" id="name" required>
+      <span class="form-error">To pole jest wymagane</span>
+    </div>
+
+    <div class="field-container">
+      <label for="email">Twój Email:</label>
+      <input type="email" name="email" id="email" required pattern="email">
+      <span class="form-error">To pole jest wymagane</span>
+    </div>
+    
+    <!-- <div class="field-container">
+      <label for="reason">Pytanie</label>
+      <select name="reason" id="reason">
+        <option value="0" disabled selected hidden>- Wybierz - </option>
+        <option value="1">Nowa strona internetowa</option>
+        <option value="2">Poprawki</option>
+        <option value="3">Zlecenia stałe</option>
+      </select>
+    </div> -->
+
+    <div class="field-container">
+      <textarea name="message" id="message" cols="20" rows="3" placeholder="Twoja wiadomość..."></textarea>
+    </div>
+
+    <div class="field-container">
+      <input type="submit" value="Skontaktuj się" class=" button btn--orange">
+    </div>
+
+  </form>
+</div>

@@ -1,0 +1,66 @@
+body {
+  @include xy-grid;
+  
+}
+.header {
+  height: auto;
+  width: 100%;
+  @include xy-grid();
+  //@include xy-grid-collapse;
+
+  @include breakpoint(large) {
+    position: fixed;
+    z-index: 1000; 
+  }
+  
+  @include breakpoint(xlarge) {
+    width: 250px;
+    height: 100vh;
+  }
+  
+}
+
+main {
+  width: 100%;
+  @include xy-grid-collapse;
+  @include xy-grid;
+  flex: 1;
+
+  @include breakpoint(xlarge) {
+    position: absolute;
+    width: calc(100% - 250px);
+    right: 0;
+  }
+}
+
+.hero {
+  @include xy-grid;
+  
+  @include breakpoint(medium) {
+    min-height: 100vh;
+
+  }
+  //@include xy-cell();
+  //@include xy-grid-collapse;
+
+}
+
+.info,
+.page,
+.quality,
+.price,
+.about,
+.contact {
+  @include xy-grid;
+  margin-top: rem-calc(45);
+  
+}
+
+
+.quality {
+  @include xy-cell();
+}
+
+.footer {
+  width: 100%;
+}

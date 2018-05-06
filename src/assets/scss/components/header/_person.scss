@@ -1,0 +1,66 @@
+.person {
+  @include xy-grid;
+  //flex-direction: column;
+  //align-items: center;
+  color: $dark-gray;
+  display: none;
+  //  @include xy-cell();
+  margin-top: rem-calc(30);
+
+  & h3 &__list {
+    @include xy-grid;
+    flex-direction: column;
+  }
+
+  h3 .person__item {
+    padding: 0 6px;
+  }
+
+  h5 .person__item {
+    margin-top: 6px;
+    letter-spacing: 2px;
+  }
+
+  // & > h3 p,
+  // & > h5 p {
+  //   line-height: 30px;
+  // }
+  // & > h3 {
+  //   margin-right: rem-calc(20);
+  // }
+
+  &__list {
+    margin: 0;
+    margin-left: 10px;
+    list-style-type: none;
+    @include xy-grid;
+    justify-content: flex-start;
+    
+  }
+
+  &__item {
+    
+
+    &--orange-bg {
+      background: $tertiary-color;
+      color: $white;
+    }
+    &--orange-tx {
+      color: $tertiary-color;
+    }
+    &--blue-bg {
+      background: $primary-color;
+      color: $white;
+    }
+    &--blue-tx {
+      color: $primary-color;
+    }
+  }
+
+
+  @include padding(1,0,2,0);
+
+  @include breakpoint(xlarge) {
+    display: flex;
+  }
+}

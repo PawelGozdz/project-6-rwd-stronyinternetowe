@@ -1,0 +1,60 @@
+.hero {
+  justify-content: center;
+  align-content: center;
+  //text-align: center;
+  flex-direction: column;
+  text-align: center;
+  //padding-bottom: rem-calc(100);
+
+  background-image: linear-gradient(to right, rgba(255,255,255, .6), rgba(255,255,255, .5)),  url("../../assets/img/board-1-reversed-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include padding(2,1,1,1);
+
+  & > * {
+    @include breakpoint(xlarge) {
+      @include xy-cell(75%);
+      text-align: left;
+    }
+    
+  }
+
+  .cta__hero {
+    //margin: 0 auto;  
+    height: auto;
+    @include xy-grid;
+    margin-bottom: rem-calc(50);
+    justify-content: center;
+    flex-direction: column;
+
+    button:first-child {
+      margin-bottom: rem-calc(45);
+    }
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+      margin-top: rem-calc(25);
+    
+      button:first-child {
+        margin-bottom: 0;
+        margin-right: rem-calc(20);
+      }
+    }
+
+    @include breakpoint(xlarge) {
+      justify-content: flex-start;
+    }    
+
+  }
+
+  h1 {
+    margin-bottom: rem-calc(20);
+    margin-top: rem-calc(-10);
+  }
+  
+  h5 {
+    margin-bottom: rem-calc(30);
+  }
+}
+
