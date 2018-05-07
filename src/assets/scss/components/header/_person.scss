@@ -1,7 +1,6 @@
 .person {
   @include xy-grid;
-  //flex-direction: column;
-  //align-items: center;
+  position: relative;
   color: $dark-gray;
   display: none;
   //  @include xy-cell();
@@ -63,4 +62,10 @@
   @include breakpoint(xlarge) {
     display: flex;
   }
+}
+
+.link-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }

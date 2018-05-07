@@ -1,5 +1,11 @@
 .section__header {
   @include xy-cell();
+  padding: rem-calc(40) 0;
+  text-align: center;
+}
+
+address {
+  font-style: normal;
 }
   
 // container for .person & .navigation 
