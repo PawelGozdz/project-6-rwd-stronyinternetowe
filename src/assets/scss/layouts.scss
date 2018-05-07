@@ -26,10 +26,15 @@ main {
   @include xy-grid;
   flex: 1;
 
+
   @include breakpoint(xlarge) {
     position: absolute;
     width: calc(100% - 250px);
     right: 0;
+  }
+
+  & > section {
+    width: 100%;
   }
 }
 
@@ -38,11 +43,7 @@ main {
   
   @include breakpoint(medium) {
     min-height: 100vh;
-
   }
-  //@include xy-cell();
-  //@include xy-grid-collapse;
-
 }
 
 .info,
@@ -51,9 +52,7 @@ main {
 .price,
 .about,
 .contact {
-  @include xy-grid;
-  margin-top: rem-calc(45);
-  
+  @include xy-grid; 
 }
 
 

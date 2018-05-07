@@ -1,14 +1,14 @@
 // jQuery classes
-section:not(:first-child) {
-  opacity: 0;
-  transform: translate(0, 60px);
-  transition: all 1.2s;
-}
+// section:not(:first-child) {
+//   opacity: 0;
+//   transform: translate(0, 60px);
+//   transition: all 1.2s;
+// }
 
-section.visible { 
-  opacity: 1;
-  transform: translate(0,0);
-}
+// section.visible { 
+//   opacity: 1;
+//   transform: translate(0,0);
+// }
 
 // .graph__img {
 //   opacity: 0;

@@ -1,9 +1,11 @@
-
+.section__header {
+  @include xy-cell();
+}
+  
 // container for .person & .navigation 
 .case {
   height: 100%;
   width: 100%;
-
 }
 
 // buttons

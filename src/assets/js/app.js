@@ -100,30 +100,30 @@ return str;
 
 
 
-// fade in for sections
-$(document).on('scroll', function() {
-  const pageTop = $(document).scrollTop();
-  const pageBottom = pageTop + $(window).height();
-  const sections = $('section');
-  const graphs = $('.graph__img');
+// // fade in for sections
+// $(document).on('scroll', function() {
+//   const pageTop = $(document).scrollTop();
+//   const pageBottom = pageTop + $(window).height();
+//   const sections = $('section');
+//   const graphs = $('.graph__img');
 
-  for(let i = 0; i < sections.length; i++) {
-    const section = sections[i];
+//   for(let i = 0; i < sections.length; i++) {
+//     const section = sections[i];
 
-    if($(section).position().top < pageBottom) {
-      //console.log($(section));
-     $(section).addClass("visible");
+//     if($(section).position().top < pageBottom) {
+//       //console.log($(section));
+//      $(section).addClass("visible");
 
-    }
-  }
+//     }
+//   }
 
-  // for(let i = 0; i < graphs.length; i++) {
-  //   const graph = graphs[i];
+//   // for(let i = 0; i < graphs.length; i++) {
+//   //   const graph = graphs[i];
 
-  //   if($(graph).position().top < pageBottom) {
-  //     //console.log($(tag));
-  //    // $(tag).addClass("visible");
-  //     $(graph).addClass("visible-right");
-  //   }
-  // }
-});
+//   //   if($(graph).position().top < pageBottom) {
+//   //     //console.log($(tag));
+//   //    // $(tag).addClass("visible");
+//   //     $(graph).addClass("visible-right");
+//   //   }
+//   // }
+// });
