@@ -3,7 +3,7 @@
   font-family: 'Advent Pro', sans-serif;
   //font-family: 'Marmelad', sans-serif;
   
-  & > h3 {
+  & > h5 {
     margin-bottom: rem-calc(30);
     @include xy-cell();
   }

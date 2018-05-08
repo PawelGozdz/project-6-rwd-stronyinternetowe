@@ -1,5 +1,6 @@
 .footer {
-
+  width: 100%;
+  background-color: $primary-color;
   
   .social-media {
     @include xy-grid;
@@ -8,7 +9,6 @@
     width: 100%;
     justify-content: center;
     padding: rem-calc(10) 0;
-    background-color: $primary-color;
 
     .social__icon {
       height: rem-calc(45);
@@ -21,6 +21,20 @@
         fill: rgba($secondary-color, .99);
       }
     }
+
+  }
+
+  p,a {
+    color: rgba($light-gray, .25);
+    text-align: center;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  p {
+    @include xy-cell();
   }
 
 }

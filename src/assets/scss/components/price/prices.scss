@@ -6,9 +6,9 @@
   }
 
   &__container {
-    @include padding(1,0,1,0);
+    @include padding(1,0,0,0);
     @include xy-grid;
-    margin-bottom: rem-calc(15);
+    margin-bottom: rem-calc(10);
     background-image: linear-gradient(rgba($white, .95), rgba($white, .95)), url("../../assets/img/sketch-2-small.jpg");
     background-position: center;
     background-size: cover;
@@ -20,7 +20,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: rem-calc(250);
+    //min-height: rem-calc(250);
+    height: auto;
     
     @include breakpoint(large) {
       @include xy-cell(1 / 3);

@@ -61,6 +61,14 @@
       object-fit: contain;
     }
   }
+
+  figcaption {
+    text-align: center;
+
+    @include breakpoint(medium) {
+      text-align: right;
+    }
+  }
 }
 
 .message {
