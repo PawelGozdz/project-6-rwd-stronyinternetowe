@@ -6,45 +6,53 @@
 
 <section class="contact__container">
 
-  <article class="contact__article">
+  <article class="contact__article" itemscope itemtype="http://schema.org/Article">
     <div class="contact__icon">
       <img src="../../assets/img/Lokalizacja.svg" alt="Lokalizacja firmy" title="Lokalizacja firmy">
     </div>
-    <p class="contact__title"><a href="http://rwd-stronyinternetowe.pl">RWD Strony Internetowe</a></p>
-    <address>
-      <span>Starachowice</span>
-      <span>27-200</span>
+    <p class="contact__title"><a href="http://rwd-stronyinternetowe.pl"><span itemprop="name">RWD Strony Internetowe</span></a></p>
+    <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      <span itemprop="addressLocality">Starachowice</span>
+      <span itemprop="postalCode">27-200</span> <br/>
+      <span itemprop="addressRegion">Świętokrzyskie</span>
     </address>
   </article>
 
-  <article class="contact__article">
+  <article class="contact__article" itemscope itemtype="http://schema.org/Article">
     <div class="contact__icon">
       <img src="../../assets/img/Telefon.svg" alt="Telefon kontaktowy" title="Telefon kontaktowy">
     </div>
-    <p class="contact__title">Dane kontaktowe</p>
+    <p class="contact__title"><span itemprop="name">Dane kontaktowe</span></p>
     <p>
       <p>Tel. 
-        <a href="tel:+48510502081"><span>510 502 081</span></a></br>
+        <a href="tel:+48510502081"><span  itemprop="telephone">510 502 081</span></a></br>
         E-mail: 
-        <a href="mailto:kontakt@rwd-stronyinternetowe.pl">kontakt@rwd-stronyinternetowe.pl</a>
+        <a href="mailto:kontakt@rwd-stronyinternetowe.pl"><span itemprop="email">kontakt@rwd-stronyinternetowe.pl</span></a>
       </p>
     </p>
   </article>
 
-  <article class="contact__article">
+  <article class="contact__article" itemscope itemtype="http://schema.org/Article">
     <div class="contact__icon">
       <img src="../../assets/img/Godziny-otwarcia.svg" alt="Godziny otwarcia" title="Godziny otwarcia">
     </div>
-    <p class="contact__title"><a href="http://rwd-stronyinternetowe.pl">Godziny otwarcia</a></p>
-    <time datetime="Mo, Tu, We, Th, Fr 08:00-17:00">
-      Od poniedzialku do piatku
-      <br>
+    <p class="contact__title"><a href="http://rwd-stronyinternetowe.pl"><span itemprop="name">Godziny otwarcia</span></a></p>
+    <time itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification"  datetime="Mo, Tu, We, Th, Fr 08:00-17:00">
+      <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+              
+        <span itemprop="articleBody">Od poniedzialku do piatku</span>
+      </span><br>
       godz. 8:00 - 17:00
     </time>
   </article>
 
+    <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+      <meta itemprop="latitude" content="51.0374" />
+      <meta itemprop="longitude" content="21.07126" />
+    </span>
+
 </section> 
 
 <section class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340265.03510937263!2d21.070045598880863!3d51.03239321830096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718142991998103%3A0xd060229300b403f2!2s27-200+Starachowice!5e0!3m2!1sen!2spl!4v1525708547338" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe itemprop="hasMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340265.03510937263!2d21.070045598880863!3d51.03239321830096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718142991998103%3A0xd060229300b403f2!2s27-200+Starachowice!5e0!3m2!1sen!2spl!4v1525708547338" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 </section>
