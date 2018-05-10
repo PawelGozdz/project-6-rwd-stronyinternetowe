@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.rwd-stronyinternetowe.pl
+RewriteRule (.*) http://rwd-stronyinternetowe.pl/$1 [R=301,L]

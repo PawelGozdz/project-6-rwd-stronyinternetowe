@@ -9,7 +9,7 @@
     @include padding(1,0,0,0);
     @include xy-grid;
     margin-bottom: rem-calc(10);
-    background-image: linear-gradient(rgba($white, .95), rgba($white, .95)), url("../../assets/img/sketch-2-small.jpg");
+    background-image: linear-gradient(rgba($white, .95), rgba($white, .95)), url("../../assets/img/sketch.jpg");
     background-position: center;
     background-size: cover;
   }

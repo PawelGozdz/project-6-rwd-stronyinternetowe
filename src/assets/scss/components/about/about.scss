@@ -10,7 +10,7 @@
 
   &__container {
     @include xy-grid;
-    background-image: linear-gradient(rgba(rgb(45, 119, 209), .75), rgba($primary-color, .9)), url("../../assets/img/shape-blue.jpg");
+    background-image: linear-gradient(rgba(rgb(45, 119, 209), .75), rgba($primary-color, .9)), url("../../assets/img/shape.jpg");
     color: $white;
     background-position: center;
     background-size: cover;
