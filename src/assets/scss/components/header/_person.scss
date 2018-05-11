@@ -12,12 +12,12 @@
   }
 
   h3 .person__item {
-    padding: 0 6px;
+    padding: 0 rem-calc(6);
   }
 
   h5 .person__item {
-    margin-top: 6px;
-    letter-spacing: 2px;
+    margin-top: rem-calc(6);
+    letter-spacing: rem-calc(2);
   }
 
   // & > h3 p,
@@ -30,7 +30,7 @@
 
   &__list {
     margin: 0;
-    margin-left: 10px;
+    margin-left: rem-calc(10);
     list-style-type: none;
     @include xy-grid;
     justify-content: flex-start;
@@ -57,7 +57,7 @@
   }
 
 
-  @include padding(1,0,2,0);
+  padding: rem-calc(10) 0 rem-calc(20);
 
   @include breakpoint(xlarge) {
     display: flex;

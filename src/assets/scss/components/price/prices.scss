@@ -9,7 +9,7 @@
   }
 
   &__container {
-    @include padding(1,0,0,0);
+    padding-top: rem-calc(35);
     @include xy-grid;
     margin-bottom: rem-calc(10);
     background-image: linear-gradient(rgba($white, .95), rgba($white, .95)), url("../../assets/img/sketch.jpg");
@@ -38,9 +38,9 @@
     h4 {
       background-color: $secondary-color;
       color: $white;
-      padding: 4px 4px;
-      border-left: 5px solid $primary-color;
-      margin: 4px;
+      padding: rem-calc(4) rem-calc(4);
+      border-left: rem-calc(5) solid $primary-color;
+      margin: rem-calc(4);
 
       span {
         display: block;
@@ -58,7 +58,7 @@
 
       @include breakpoint(large) {
         width: auto; 
-        font-size: 16px;
+        font-size: rem-calc(16);
       }
     }
   }
@@ -71,8 +71,8 @@
 .close-button {
   background-color: $primary-color;
   color: $white;
-  height: 40px;
-  width: 40px;
+  height: rem-calc(40);
+  width: rem-calc(40);
   border-radius: 50%;
-  padding: 5px;
+  padding: rem-calc(5);
 }

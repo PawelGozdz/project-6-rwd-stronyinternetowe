@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @include padding(1,0,1,0);
+  padding: rem-calc(12) 0;
 
   & > * {
     @include breakpoint(xlarge) {

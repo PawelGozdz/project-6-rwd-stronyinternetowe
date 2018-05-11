@@ -25,10 +25,10 @@
 
 .arrow {
   position: fixed;
-  bottom: 40px;
-  right: 30px;
-  height: 40px;
-  width: 40px;
+  bottom: rem-calc(40);
+  right: rem-calc(30);
+  height: rem-calc(40);
+  width: rem-calc(40);
   display: none;
   z-index: 10000;
   border: 2px solid $white;
@@ -37,8 +37,8 @@
 
   a {
     display: block;
-    font-size: 30px;
-    padding: 0 10px 10px 10px;
+    font-size: rem-calc(30);
+    padding: 0 rem-calc(10) rem-calc(10);
     color: $white;
   }
 

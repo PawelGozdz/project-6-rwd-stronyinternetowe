@@ -1,6 +1,6 @@
 .info {
   text-align: center;
-  padding-top: 16px;
+  padding-top: rem-calc(16);
   margin-top: rem-calc(30);
   background-color: rgba($light-gray, .3);
 
@@ -44,27 +44,27 @@
     margin: rem-calc(8) 0;
 
     @include breakpoint(xlarge) {
-      font-size: 20px;
+      font-size: rem-calc(20);
     }
 
     @include breakpoint(xxlarge) {
-      font-size: 26px;
+      font-size: rem-calc(26);
     }
 
     span {
       display: inline-block;
-      margin: 4px 3px;
+      margin: rem-calc(4) rem-calc(3);
     }
 
   }
 
   p {
-    padding: 5px;
+    padding: rem-calc(5);
 
     span {
       display: inline-block;
-      margin: 4px 3px;
-      padding: 2px;
+      margin: rem-calc(4) rem-calc(3);
+      padding: rem-calc(2);
     }
   }
 }

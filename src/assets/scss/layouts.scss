@@ -6,9 +6,11 @@ body {
   height: auto;
   width: 100%;
   @include xy-grid();
+  display: none;
   //@include xy-grid-collapse;
 
   @include breakpoint(large) {
+    display: block;
     position: fixed;
     z-index: 1000; 
   }

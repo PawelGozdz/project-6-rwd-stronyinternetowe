@@ -34,11 +34,11 @@
 
     a {
       display: inline-block;
-      margin: 2px;
+      margin: rem-calc(2);
 
       span {
         display: block;
-        margin: 4px;
+        margin: rem-calc(4);
       }
     }
   }
@@ -61,7 +61,7 @@
     
     span { 
       display: inline-block;
-      margin: 15px 3px;
+      margin: rem-calc(15) rem-calc(3);
       
     }
 

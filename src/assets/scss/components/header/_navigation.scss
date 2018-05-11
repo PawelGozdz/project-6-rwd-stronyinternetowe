@@ -13,8 +13,8 @@
 }
 
 .nav-item {
-  margin: 2px 0;
-  padding: 2px 0;  
+  margin: rem-calc(2) 0;
+  padding: rem-calc(2) 0;  
 }
 
 .nav-link {
@@ -44,5 +44,5 @@
 
 .title-bar {
   background: $secondary-color;
-  font-size: 16px;
+  font-size: rem-calc(16);
 }

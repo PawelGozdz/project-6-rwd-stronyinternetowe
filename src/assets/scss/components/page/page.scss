@@ -103,7 +103,7 @@
 
 .bold {
   @include font-bold;
-  margin: 2px 3px;
+  margin: rem-calc(2) rem-calc(3);
 }
 
 .message {

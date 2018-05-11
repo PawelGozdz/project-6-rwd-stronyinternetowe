@@ -13,7 +13,7 @@
     .social__icon {
       height: rem-calc(45);
       width: rem-calc(45);
-      margin: 5px rem-calc(10);
+      margin: rem-calc(5) rem-calc(10);
       fill: $white;
       transition: fill .5s ease;
 
@@ -23,7 +23,7 @@
 
       use {
         display: inline-block;
-        margin: 2px 5px;
+        margin: rem-calc(2) rem-calc(5);
       }
     }
 
@@ -35,7 +35,7 @@
 
     span {
       display: inline-block;
-      margin: 2px;
+      margin: rem-calc(2);
     }
   }
 
