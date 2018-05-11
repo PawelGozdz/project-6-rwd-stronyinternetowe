@@ -10,6 +10,7 @@
   @include xy-grid;
   @include xy-cell();
   padding-bottom: rem-calc(60);
+  @include xy-grid-container;
 
  }  
 
@@ -61,7 +62,7 @@
     
     span { 
       display: inline-block;
-      margin: rem-calc(15) rem-calc(3);
+      margin: rem-calc(5) rem-calc(3);
       
     }
 

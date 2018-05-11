@@ -1,19 +1,17 @@
 .services {
-  @include xy-grid;
+  @include xy-grid(vertical);
 
-  & > h3,
-  & > p {
+  &__text {
     @include xy-cell();
-  }
-
-  & > h3 {
-    margin-bottom: rem-calc(30);
+    @include xy-grid-container;
+    padding: rem-calc(20);
+    text-align: center;
   }
 
   &__container {
-    padding-top:rem-calc(20);
+    padding:rem-calc(20);
     @include xy-grid;
-    margin-bottom: rem-calc(15);
+    //margin-bottom: rem-calc(15);
     background-image: linear-gradient(rgba($secondary-color, .15), rgba($white, .95));
   }
 

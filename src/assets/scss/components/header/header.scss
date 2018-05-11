@@ -4,8 +4,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include breakpoint(xlarge) {
-    border-bottom: 0;
-  }
+  // @include breakpoint(xlarge) {
+  //   border-bottom: 0;
+  // }
 
 }

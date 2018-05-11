@@ -5,6 +5,8 @@
   @include xy-cell();
   width: 100%;
   }
+
+  @include xy-grid-container;
 }
 
 .nav-list {

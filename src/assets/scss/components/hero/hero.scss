@@ -6,6 +6,7 @@
   text-align: center;
   //padding-bottom: rem-calc(100);
 
+
   background-image: linear-gradient(to right, rgba(255,255,255, .6), rgba(255,255,255, .5)),  url("../../assets/img/board.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,10 +14,12 @@
   padding: rem-calc(12) 0;
 
   & > * {
-    @include breakpoint(xlarge) {
-      @include xy-cell(75%);
-      text-align: left;
-    }
+    // @include breakpoint(xlarge) {
+    //   @include xy-cell(75%);
+    //   text-align: left;
+    // }
+
+    @include xy-grid-container;
     
   }
 
@@ -71,7 +74,6 @@
 
   h1 {
     margin-bottom: rem-calc(20);
-
   }
   
   h5 {

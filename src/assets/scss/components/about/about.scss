@@ -10,14 +10,18 @@
 
   }
 
+  &__wrapper {
+    background-image: linear-gradient(rgba(rgb(45, 119, 209), .75), rgba($primary-color, .9)), url("../../assets/img/shape.jpg");
+    width: 100%;
+  }
+  
   &__container {
     @include xy-grid;
-    background-image: linear-gradient(rgba(rgb(45, 119, 209), .75), rgba($primary-color, .9)), url("../../assets/img/shape.jpg");
     color: $white;
     background-position: center;
     background-size: cover;
     padding: rem-calc(20) 0;
-    width: 100%;
+
   }
  
   &__box {

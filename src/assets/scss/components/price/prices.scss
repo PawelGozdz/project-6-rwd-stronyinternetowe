@@ -1,20 +1,17 @@
 .prices {
   margin-bottom: 0;
   margin-top: 0;
-  //width: 100%;
+  background-image: linear-gradient(rgba($white, .95), rgba($white, .95)), url("../../assets/img/sketch.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
   
-  & > h3 {
-    @include xy-cell();
-    margin-bottom: rem-calc(30);
-  }
-
+  
   &__container {
-    padding-top: rem-calc(35);
     @include xy-grid;
+    padding-top: rem-calc(15);
+    @include xy-grid-container;
     margin-bottom: rem-calc(10);
-    background-image: linear-gradient(rgba($white, .95), rgba($white, .95)), url("../../assets/img/sketch.jpg");
-    background-position: center;
-    background-size: cover;
   }
 
   .box {

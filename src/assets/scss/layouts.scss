@@ -5,20 +5,20 @@ body {
 .header {
   height: auto;
   width: 100%;
-  @include xy-grid();
-  display: none;
-  //@include xy-grid-collapse;
+  //@include xy-grid();
+  position: fixed;
 
-  @include breakpoint(large) {
-    display: block;
-    position: fixed;
-    z-index: 1000; 
-  }
+
+  // @include breakpoint(large) {
+  //   display: block;
+  //   position: fixed;
+  //   z-index: 1000; 
+  // }
   
-  @include breakpoint(xlarge) {
-    width: 250px;
-    height: 100vh;
-  }
+  // @include breakpoint(xlarge) {
+  //   width: 250px;
+  //   height: 100vh;
+  // }
   
 }
 
@@ -27,21 +27,17 @@ main {
   @include xy-grid-collapse;
   @include xy-grid;
   flex: 1;
+  margin: 0 auto;
 
 
-  @include breakpoint(xlarge) {
-    position: absolute;
-    width: calc(100% - 250px);
-    right: 0;
-  }
-
-  & > section {
-    width: 100%;
-  }
+  // & > section {
+  //   max-width: rem-calc(960);
+  // }
 }
 
 .hero {
   @include xy-grid;
+  width: 100%;
   
   @include breakpoint(medium) {
     min-height: 100vh;
@@ -55,15 +51,6 @@ main {
 .about,
 .contact {
   @include xy-grid; 
-  
-  @include breakpoint(medium) {
-    margin-top: rem-calc(50); 
-  }
-}
-
-
-.quality {
-  @include xy-cell();
 }
 
 .footer {

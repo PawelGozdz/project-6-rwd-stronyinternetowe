@@ -1,22 +1,14 @@
 .section__header {
   @include xy-cell();
+  @include xy-grid-container;
   padding: rem-calc(30) 0 rem-calc(20) ;
+  margin: rem-calc(30) auto;
   text-align: center;
-  
-  @include breakpoint(medium) {
-    padding: rem-calc(40) 0;
 
-  }
 }
 
 address {
   font-style: normal;
-}
-  
-// container for .person & .navigation 
-.case {
-  height: 100%;
-  width: 100%;
 }
 
 // buttons
@@ -56,3 +48,4 @@ address {
     background-color: darken($secondary-color, 10%);
   }
 }
+
