@@ -2,9 +2,12 @@
   @include xy-cell();
   @include xy-grid-container;
   padding: rem-calc(30) 0 rem-calc(20) ;
-  margin: rem-calc(30) auto;
+  margin: rem-calc(50) auto rem-calc(30);
   text-align: center;
-
+  
+  @include breakpoint(large) {
+    margin: rem-calc(30) auto;
+  }
 }
 
 address {
