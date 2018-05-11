@@ -26,19 +26,30 @@
 .graph {
   @include xy-grid;
   height: auto;
-  margin-top: rem-calc(20);
+  margin-top: rem-calc(30);
+  width: 100%;
+  justify-content: center;
 
   &--half {
-    @include xy-cell();
+    //@include xy-cell();
+    @include xy-grid-collapse;
+    width: 100%;
   }
 
   &--full {
-    @include xy-cell();
+    //@include xy-cell();
+    @include xy-grid-collapse;
+    width: 100%;
   }
 
   &__text {
     background-image: linear-gradient(rgba($light-gray, .4), rgba($light-gray, 0));
     padding: rem-calc(6);
+    width: 100%;
+
+    @include breakpoint(large) {
+      padding: 8px 8px;
+    } 
   }
 
   &:last-child {
@@ -50,6 +61,7 @@
     @include xy-grid;
     flex-direction: column;
     @include xy-cell();
+    
 
     @include breakpoint(large) {
       @include xy-cell(1/2);
@@ -64,18 +76,42 @@
 
   figcaption {
     text-align: center;
+    margin: rem-calc(20) 0;
+    color: $dark-gray;
+    @include xy-cell();
 
     @include breakpoint(medium) {
       text-align: right;
     }
+
+    span {
+      display: inline-block;
+      padding: 2px 3px;
+      margin: 4px 2px;
+    }
   }
+
+  button {
+    align-self: center;
+    margin-bottom: rem-calc(20);
+    
+    @include breakpoint(medium) {
+      margin-bottom: rem-calc(30);
+    }
+  }
+}
+
+.bold {
+  @include font-bold;
+  margin: 2px 3px;
 }
 
 .message {
   @include xy-cell();
   background: rgba(tomato, .2);
   text-align: center;
-  margin-top: rem-calc(20);
+  margin-top: rem-calc(40);
+  margin-bottom: rem-calc(10);
   padding: rem-calc(6);
   border: 2px solid tomato;
   
@@ -87,6 +123,10 @@
 // popup window
 
 .bigger {
-  width: 50%;
+  width: 150%;
   height: auto;
+
+  @include breakpoint(large) {
+    width: 60%;
+  }
 }

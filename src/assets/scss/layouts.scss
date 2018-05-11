@@ -53,6 +53,10 @@ main {
 .about,
 .contact {
   @include xy-grid; 
+  
+  @include breakpoint(medium) {
+    margin-top: rem-calc(50); 
+  }
 }
 
 

@@ -4,6 +4,7 @@
   background-position: center center;
   background-attachment: fixed;
   //padding-bottom: rem-calc(40);
+  margin-top: 0;
 
  &__container {
   @include xy-grid;
@@ -13,38 +14,68 @@
  }  
 
  &__article {
-   text-align: center;
-   @include xy-cell();
-  
-   &:not(:last-child) {
-     margin-bottom: rem-calc(20);
-   }
+  text-align: center;
+  @include xy-cell();
 
-   @include breakpoint(medium) {
-    @include xy-cell(1 / 3);
+  &:not(:last-child) {
     margin-bottom: rem-calc(20);
-   }
+  }
+
+  @include breakpoint(medium) {
+  @include xy-cell(1 / 3);
+  margin-bottom: rem-calc(20);
+  }
  }
 
  &__title {
-   font-size: rem-calc(20);
-   @include font-bold();
-   margin-bottom: rem-calc(16);
- }
+    font-size: rem-calc(20);
+    @include font-bold();
+    margin: rem-calc(12) 0 rem-calc(20);
 
- a {
-   text-decoration: underline;
- }
- &__icon {
-   padding: rem-calc(30) 0;
-   fill: red;
+    a {
+      display: inline-block;
+      margin: 2px;
 
-   img {
-    width: rem-calc(40);
+      span {
+        display: block;
+        margin: 4px;
+      }
+    }
   }
- }
+
+  &__icon {
+    padding: rem-calc(30) 0;
+    fill: red;
+
+    img {
+      width: rem-calc(40);
+    }
+  }
+  
+  time {
+    display: block;
+  }
+
+  &__title +  * {
+    display: block;
+    
+    span { 
+      display: inline-block;
+      margin: 15px 3px;
+      
+    }
+
+    a span{
+      text-decoration: underline;
+    }
+  }
+
+
 }
 .map {
   width: 100%;
   height: rem-calc(200);
+}
+a {
+  text-decoration: underline;
 }

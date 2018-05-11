@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @include padding(2,1,1,1);
+  @include padding(1,0,1,0);
 
   & > * {
     @include breakpoint(xlarge) {
@@ -24,17 +24,31 @@
     //margin: 0 auto;  
     height: auto;
     @include xy-grid;
-    margin-bottom: rem-calc(50);
+    margin-bottom: rem-calc(30);
+    margin-top: rem-calc(6);
     justify-content: center;
     flex-direction: column;
+    //width: 100%;
 
-    button:first-child {
-      margin-bottom: rem-calc(45);
+    button {
+      margin-top: rem-calc(6);
+      margin-bottom: rem-calc(6);
+    }
+
+    button a{
+      width: 100%;
+    }
+
+    @include breakpoint(small only) {
+      button:first-child {
+        margin-bottom: rem-calc(50);
+        // width: 100%;
+      }
     }
 
     @include breakpoint(medium) {
       flex-direction: row;
-      margin-top: rem-calc(25);
+      margin-top: rem-calc(5);
     
       button:first-child {
         margin-bottom: 0;
@@ -48,13 +62,20 @@
 
   }
 
+  .section__header {
+    
+    @include breakpoint(medium) {
+      //margin-top: auto;
+    }
+  }
+
   h1 {
     margin-bottom: rem-calc(20);
-    margin-top: rem-calc(-10);
+
   }
   
   h5 {
-    margin-bottom: rem-calc(30);
+    margin-bottom: rem-calc(20);
   }
 }
 

@@ -1,7 +1,12 @@
 .section__header {
   @include xy-cell();
-  padding: rem-calc(40) 0;
+  padding: rem-calc(30) 0 rem-calc(20) ;
   text-align: center;
+  
+  @include breakpoint(medium) {
+    padding: rem-calc(40) 0;
+
+  }
 }
 
 address {
@@ -15,38 +20,38 @@ address {
 }
 
 // buttons
-
-.btn--orange {
+.btn {
+  display: block;
   align-self: center;
-  width: 100%;
-  height: 100%;
-  padding: 9px 12px;
-  background-color: $tertiary-color;
-  color: $white;
-  border-radius: 3px;
   font-size: rem-calc(18);
+  border-radius: 3px;
   box-shadow: 0 2px 10px 1px gray;
+  padding: 12px 6px;
+  margin: 5px 5px;
+  color: $white;
+  
+  @include breakpoint(xlarge) {
+    align-self: flex-start;
+  }
+  
+  a {
+    color: $white;
+  }
+}
+
+
+.btn--orange {  
+  background-color: $tertiary-color;
 
   &:hover, &:active, &:focus {
     background-color: darken($tertiary-color, 10%);
-    color: $white;
-  }
-
-  @include breakpoint(xlarge) {
-    align-self: flex-start;
   }
 }
 
 .btn--blue {
-  padding: 11px 12px;
-  color: $white;
   background-color: $secondary-color;
-  border-radius: 3px;
-  margin: rem-calc(16) auto;
-  box-shadow: 0 2px 10px 1px gray;
 
   &:hover, &:active, &:focus {
     background-color: darken($secondary-color, 10%);
-    color: $white;
   }
 }
