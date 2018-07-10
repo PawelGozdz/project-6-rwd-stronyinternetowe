@@ -10,7 +10,8 @@ if(is_ajax()){
       $header = 'From: ' . $email . " \r\n";
       $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
       $header .=  "Mime-Version: 1.0  \r\n";
-      $header .= ("Content-Type: text/html; charset=UTF-8"); 
+      //$header .= ("Content-Type: text/html; charset=UTF-8"); 
+      $headers.= "Content-Type: text/plain;charset=utf-8\r\n"
       $body = "Name: " . $name . "  \r\n";
       $body .= "Email:" . $email . " \r\n";
       $body .= "Treść wiadomości:" . $message . " \r\n";
