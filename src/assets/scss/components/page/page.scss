@@ -15,6 +15,7 @@
     margin-top: rem-calc(30);
     width: 100%;
     justify-content: center;
+    margin-bottom: rem-calc(30);
   }
 
   &__section--half {
@@ -47,6 +48,7 @@
     max-height: 100%;
     @include xy-grid;
     flex-direction: column;
+    //margin-bottom: rem-calc(25);
     //@include xy-cell();
     
 
