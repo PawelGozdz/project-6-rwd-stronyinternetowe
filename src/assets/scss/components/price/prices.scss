@@ -15,7 +15,7 @@
   }
 
   .box {
-    @include xy-cell();
+    //@include xy-cell();
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,8 @@
       }
     }
 
-    button {
+    .btn {
+      display: block;
       margin: rem-calc(20) auto ;
       text-align: center;
     }

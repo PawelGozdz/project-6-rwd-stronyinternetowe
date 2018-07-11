@@ -2,17 +2,21 @@
   @include xy-grid(vertical);
 
   &__text {
-    @include xy-cell();
+    //@include xy-cell();
     @include xy-grid-container;
     padding: rem-calc(20);
     text-align: center;
   }
 
   &__container {
-    padding:rem-calc(20);
+    
     @include xy-grid;
     //margin-bottom: rem-calc(15);
     background-image: linear-gradient(rgba($secondary-color, .15), rgba($white, .95));
+
+    @include breakpoint(medium) {
+      padding:rem-calc(20);
+    }
   }
 
   h4 {
@@ -26,15 +30,15 @@
   }
 
 
-  h4 span {
-    display: inline-block;
-    background-color: $secondary-color;
-    color: $white;
-    padding: rem-calc(4) rem-calc(22);
-    border-left: rem-calc(5) solid $primary-color;
-    width: rem-calc(20);
-    height: 100%;
-  }
+  // h4 span {
+  //   display: inline-block;
+  //   background-color: $secondary-color;
+  //   color: $white;
+  //   padding: rem-calc(4) rem-calc(22);
+  //   border-left: rem-calc(5) solid $primary-color;
+  //   width: rem-calc(20);
+  //   height: 100%;
+  // }
 
   h5 span {
     display: inline-block;
